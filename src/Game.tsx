@@ -29,10 +29,6 @@ export default class Game extends React.Component<{}, State> {
                         squaresValues={this.state.squaresValues}
                     />
                 </div>
-                <div className="game-info">
-                    <div>{/* status */}</div>
-                    <ol>{/* TODO */}</ol>
-                </div>
             </div>
         );
     }
