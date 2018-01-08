@@ -22,7 +22,7 @@ export default class Board extends React.Component<Props> {
 
         for (let i = 0; i < Board.totalRows; i += 1) {
             rows.push(
-                <div className="board-row">
+                <div key={i} className="board-row">
                     {this.renderRowSquares(i)}
                 </div>
             );
@@ -45,6 +45,7 @@ export default class Board extends React.Component<Props> {
 
         return (
             <Square
+                key={squareNumber}
                 squareNumber={squareNumber}
                 value={this.props.squaresValues[squareNumber]}
                 onClick={this.props.onClick}

@@ -3,6 +3,9 @@
 #Intellij IDE' .idea folder
 /.idea/*
 
+# VSCode
+/.vscode/*
+
 # testing
 /coverage
 
